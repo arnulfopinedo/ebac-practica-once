@@ -1,0 +1,37 @@
+body {
+    @include body;
+}
+
+header {
+    @include flexbox;
+    @extend %jc-sb;
+    @extend %gap-10;
+    
+    img {
+        @extend %img-80;
+    }
+
+    nav {
+        @extend %flex;
+        @extend %gap-10;
+        
+        a {
+            @extend %link;
+            @extend %colorFuente;
+            @include phones {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    @include flexbox;
+    @extend %jc-e;
+    @extend %colorFuente;
+    
+    h6 {
+        @extend %fw-600;
+        @extend %mb-0;
+    }
+}

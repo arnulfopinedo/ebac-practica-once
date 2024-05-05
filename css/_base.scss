@@ -1,0 +1,56 @@
+$fontFamily: "Poppins", Arial, Helvetica, sans-serif;
+$colorFuente: #8311fa;
+$fz: 1.1rem;
+
+@mixin body {
+    font-family: $fontFamily;
+    font-size: $fz;
+}
+
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@mixin phones {
+    @media screen and (max-width: 48rem) { @content };
+}
+
+%jc-sb {
+    justify-content: space-between;
+}
+
+%jc-e {
+    justify-content: end;
+}
+
+%flex {
+    display: flex;
+}
+
+%gap-10 {
+    gap: 10px;
+}
+
+%img-80 {
+    width: 80px;
+}
+
+%link {
+    text-decoration: none;
+}
+
+%colorFuente {
+    color: $colorFuente;
+}
+
+%fw-600 {
+    font-weight: 600;
+}
+
+%mb-0 {
+    margin-bottom: 0;
+}
